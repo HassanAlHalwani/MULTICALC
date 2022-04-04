@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <Button
+        android:id="@+id/submitBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="92dp"
+        android:text="Submit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/cancelBT"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/cancelBT"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:text="Cancel"
+        app:layout_constraintEnd_toStartOf="@+id/submitBT"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RatingRadioGroup"
+        tools:ignore="MissingConstraints" />
+
+    <RadioGroup
+        android:id="@+id/RatingRadioGroup"
+        android:layout_width="874dp"
+        android:layout_height="326dp"
+        android:layout_marginBottom="144dp"
+        android:padding="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <RadioButton
+            android:id="@+id/DTDRB"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="Jordanian dinar to US dollar" />
+
+        <RadioButton
+            android:id="@+id/DTURB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jordanian dinar to the European euro" />
+
+        <RadioButton
+            android:id="@+id/DTJRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jordanian dinar to UAE dirham" />
+
+        <RadioButton
+            android:id="@+id/DTJRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jordanian dinar to Saudi riyal"
+            tools:ignore="DuplicateIds" />
+
+        <RadioButton
+            android:id="@+id/DTJRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jordanian dinar to Egyptian pound"
+            tools:ignore="DuplicateIds" />
+        <RadioButton
+            android:id="@+id/DTSRB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jordanian dinar to Sterling pound"
+            tools:ignore="DuplicateIds" />
+
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
